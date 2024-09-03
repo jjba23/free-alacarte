@@ -15,7 +15,7 @@
           (final: prev: {
             free-alacarte = final.haskell-nix.project' {
               src = ./.;
-              compiler-nix-name = "ghc98";
+              compiler-nix-name = "ghc96";
               shell.tools = {
                 cabal = { };
                 hlint = { };
