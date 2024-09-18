@@ -1,4 +1,0 @@
-* Changelog for free-alacarte
-
-All notable changes to this project will be documented in this file.
-
