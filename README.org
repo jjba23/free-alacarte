@@ -31,6 +31,11 @@ If you are into it, you can also write the Functor instances by hand, for your f
 
 #+end_src
 
+
+#+begin_html
+<div><img src="./resources/img/free-1.webp"/></div>
+#+end_html
+
 An ~exec~ function can execute values of these data types using the ~Free~ free monad. This uses intuitions of category theory to describe imperative sequence of computations as a fold over a functor. *NOTE*: the ~exec~ function is provided by this library and you don't need to implement it yourself.
 
 #+begin_src haskell
@@ -92,6 +97,8 @@ The following example uses the ~cat~ function to print the content of the README
   main = exec @(FileSystem :+: Teletype) $ cat "README.md"
 #+end_src
 
+
+
 * More on the topic
 
 I can only extremely recommend the following resources to gain more understanding about the ideas and intuitions behind this library, and behind Data types à la Carte.
@@ -99,3 +106,7 @@ I can only extremely recommend the following resources to gain more understandin
 - Original paper, by Wouter Swierstra: https://webspace.science.uu.nl/~swier004/publications/2008-jfp.pdf
 - Powerpoint explanation, by Wouter Swierstra: https://webspace.science.uu.nl/~swier004/talks/2018-fp-ams.pdf
 - Good alternative explanation and implementation, by Travis Cardwell: https://www.extrema.is/blog/2022/04/04/data-types-a-la-carte
+
+#+begin_html
+<div><img src="./resources/img/free-2.webp"/></div>
+#+end_html
