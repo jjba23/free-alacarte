@@ -7,7 +7,16 @@ Free monads based on  from intuitions from the Data types à la Carte paper. Com
 #+end_html
 
 
-* How do you use this ?  
+* How do you use this ?
+
+Read further for the classical teletype and filesystem example, and much more explanation.
+
+** Free a la Carte tests
+The tests for Free a la Carte are a great place to learn the basics and take inspiration.
+
+Check it out: [[./test/Free/AlaCarte/Test.hs][./test/Free/AlaCarte/Test.hs]]
+
+** Teletype + Filesystem example
 
 This section gives a brief demonstration of using free monads to model effects.
 
