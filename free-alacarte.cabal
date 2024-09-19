@@ -1,6 +1,6 @@
 cabal-version: 1.12
 name: free-alacarte
-version: 1.0.0.4
+version: 1.0.0.6
 maintainer:     Josep Bigorra <jjbigorra@gmail.com>
 build-type:     Simple
 license:        LGPL-3
