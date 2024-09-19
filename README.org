@@ -2,6 +2,11 @@
 
 Free monads based on  from intuitions from the Data types à la Carte paper. Combine functors and make embedded DSLs in Haskell.
 
+#+begin_html
+<div><img src="./resources/img/free-1.webp"/></div>
+#+end_html
+
+
 * How do you use this ?  
 
 This section gives a brief demonstration of using free monads to model effects.
@@ -30,11 +35,6 @@ If you are into it, you can also write the Functor instances by hand, for your f
     PutChar c g -> PutChar c (f g)
 
 #+end_src
-
-
-#+begin_html
-<div><img src="./resources/img/free-1.webp"/></div>
-#+end_html
 
 An ~exec~ function can execute values of these data types using the ~Free~ free monad. This uses intuitions of category theory to describe imperative sequence of computations as a fold over a functor. *NOTE*: the ~exec~ function is provided by this library and you don't need to implement it yourself.
 
@@ -110,3 +110,12 @@ I can only extremely recommend the following resources to gain more understandin
 #+begin_html
 <div><img src="./resources/img/free-2.webp"/></div>
 #+end_html
+
+* Projects using Free a la Carte
+
+- WikiMusic API: https://github.com/jjba23/wikimusic-api
+- WikiMusic SSR: https://github.com/jjba23/wikimusic-ssr
+- Yak: https://github.com/jjba23/yak
+- Rephs: https://github.com/jjba23/rephs
+- HSResumeBuilder: https://github.com/jjba23/hsresumebuilder
+- JJBA: https://github.com/jjba23/jjba
