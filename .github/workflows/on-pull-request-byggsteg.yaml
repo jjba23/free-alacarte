@@ -1,0 +1,21 @@
+name: "on pull request - byggsteg"
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+
+jobs:
+  on-pull-request-byggsteg:
+    runs-on: ubuntu-latest
+    steps:              
+      - name: "trigger build, test and hackage bundle at byggsteg"
+        run: |
+           curl 'https://byggsteg.jointhefreeworld.org/api/jobs/submit' \
+               -X POST -H 'Content-Type: application/x-www-form-urlencoded' \
+               -H 'Authorization: Basic ${{secrets.BYGGSTEG_KEY}}' \
+               --data-urlencode "project=free-alacarte \
+               --data-urlencode "branch-name=${{ github.head_ref || github.ref_name }}" \
+               --data-urlencode "task=stack-test" \
+               --data-urlencode "clone-url=https://github.com/jjba23/free-alacarte"
+
