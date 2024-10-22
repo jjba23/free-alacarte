@@ -1,6 +1,6 @@
 cabal-version: 1.12
 name: free-alacarte
-version: 1.0.0.7
+version: 1.0.0.8
 maintainer:     Josep Bigorra <jjbigorra@gmail.com>
 build-type:     Simple
 license:        LGPL-3
@@ -8,7 +8,11 @@ license-file: COPYING
 synopsis: Free monads based on intuitions from the Data types à la Carte.             
 description: Free monads based on intuitions from the Data types à la Carte paper. Combine functors and make embedded DSLs in Haskell.
 homepage: https://github.com/jjba23/free-alacarte
-                                         
+extra-source-files:
+      ./test/Free/AlaCarte/Test.hs
+      ./test/Spec.hs
+          
+                                                   
 library
   exposed-modules:
     Free.AlaCarte
